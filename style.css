@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#matrix-terminal {
+    width: 80%;
+    height: 80%;
+    border: 1px solid green;
+    padding: 10px;
+    background-color: black;
+    font-size: 16px;
+    color: #00FF00;
+}
+
+#matrix-output {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+}
+
+#matrix-input {
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #00FF00;
+    width: 100%;
+    font-size: 16px;
+}
