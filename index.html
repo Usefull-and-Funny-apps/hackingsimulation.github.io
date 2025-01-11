@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Matrix Effect</title>
-    <link rel="stylesheet" href="style.css">
+    <title>API Server</title>
 </head>
 <body>
-    <div id="matrix-terminal">
-        <div id="matrix-output"></div>
-        <input id="matrix-input" type="text" autofocus autocomplete="off">
-    </div>
-
-    <script src="script.js"></script>
+    <h1>API Server Authentication</h1>
+    <h3>API Request Example (for testing with your own code):</h3>
+    <pre>
+fetch('http://localhost:3000/api', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        username: 'your-username',
+        password: 'your-password',
+        option: 'read'  // or 'write'
+    })
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error));
+    </pre>
 </body>
 </html>
